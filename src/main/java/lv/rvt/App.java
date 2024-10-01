@@ -79,19 +79,27 @@ public class App
 
 
 
-        int count = 0;
-        int sum = 0;
-        while (true) {
-            System.out.println("Give a number: ");
-            int number = scanner.nextInt();
-            if (number == 0) {
-                break;
-            }
-            sum += number;
-            count++;
+        // int count = 0;
+        // int sum = 0;
+        // while (true) {
+        //     System.out.println("Give a number: ");
+        //     int number = scanner.nextInt();
+        //     if (number == 0) {
+        //         break;
+        //     }
+        //     sum += number;
+        //     count++;
+        // }
+        // System.out.println("Number of numbers: " + count);
+        // System.out.println("Sum of the numbers: " + sum);
+
+
+
+        System.out.println();
+        int number = scanner.nextInt();
+        for (int i = 0; i <= number; i++) {
+            System.out.println(i);
         }
-        System.out.println("Number of numbers: " + count);
-        System.out.println("Sum of the numbers: " + sum);
 
 
 
