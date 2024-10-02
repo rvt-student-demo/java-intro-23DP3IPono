@@ -102,17 +102,51 @@ public class App
         // }
 
 
-        System.out.println("Last number?");
-        int n = scanner.nextInt();
+        // System.out.println("Last number?");
+        // int n = scanner.nextInt();
+        // int sum = 0;
+
+        // for (int i = 1; i <= n; i++) {
+        //     sum += i;
+        // }
+
+        // System.out.println("The sum is " + sum);
+
+
+        // for (int x = 10; x < 100; x += 10) {
+        //     System.out.println(x);
+        // }
+
+
+        int number;
         int sum = 0;
-
-        for (int i = 1; i <= n; i++) {
-            sum += i;
+        int count = 0;
+        int evenCount = 0;
+        int oddCount = 0;
+        System.out.println("Give numbers: ");
+        while (true) {
+            number = scanner.nextInt();
+            if (number == -1) {
+                System.out.println("Thx! Bye!");
+                break;
+            }
+            sum += number;
+            count++;
+            if (number % 2 == 0) {
+                evenCount++;
+            } else {
+                oddCount++;
+            }
         }
-
-        System.out.println("The sum is " + sum);
+        if (count > 0) {
+            double mean = (double) sum / count;
+            System.out.println("Sum: " + sum);
+        System.out.println("Numbers: " + count);
+        System.out.println("Average: " + mean);
+        System.out.println("Even: " + evenCount);
+        System.out.println("Odd: " + oddCount);
+        }
         
-
 
 
     
