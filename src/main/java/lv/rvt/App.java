@@ -118,41 +118,60 @@ public class App
         // }
 
 
-        int number;
-        int sum = 0;
-        int count = 0;
-        int evenCount = 0;
-        int oddCount = 0;
-        System.out.println("Give numbers: ");
-        while (true) {
-            number = scanner.nextInt();
-            if (number == -1) {
-                System.out.println("Thx! Bye!");
-                break;
-            }
-            sum += number;
-            count++;
-            if (number % 2 == 0) {
-                evenCount++;
-            } else {
-                oddCount++;
-            }
-        }
-        if (count > 0) {
-            double mean = (double) sum / count;
-            System.out.println("Sum: " + sum);
-        System.out.println("Numbers: " + count);
-        System.out.println("Average: " + mean);
-        System.out.println("Even: " + evenCount);
-        System.out.println("Odd: " + oddCount);
-        }
+        // int number;
+        // int sum = 0;
+        // int count = 0;
+        // int evenCount = 0;
+        // int oddCount = 0;
+        // System.out.println("Give numbers: ");
+        // while (true) {
+        //     number = scanner.nextInt();
+        //     if (number == -1) {
+        //         System.out.println("Thx! Bye!");
+        //         break;
+        //     }
+        //     sum += number;
+        //     count++;
+        //     if (number % 2 == 0) {
+        //         evenCount++;
+        //     } else {
+        //         oddCount++;
+        //     }
+        // }
+        // if (count > 0) {
+        //     double mean = (double) sum / count;
+        //     System.out.println("Sum: " + sum);
+        // System.out.println("Numbers: " + count);
+        // System.out.println("Average: " + mean);
+        // System.out.println("Even: " + evenCount);
+        // System.out.println("Odd: " + oddCount);
+        // }
         
+
+
+    // System.out.println("How many times?");
+    // int x = scanner.nextInt();
+    // for (int y = 0; y < x; y++) {
+    //     printText();
+    // } 
+    // }
+    // public static void printText() {
+    //     System.out.println("In a hole in the ground there lived a method");
+
+
 
 
     
+        divisibleByThree(2, 10);
 
 
-        
     }
-
+    
+    public static void divisibleByThree(int first, int second) {
+        for (int i = first; i <= second; i++) {
+            if (i % 3 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
 }
