@@ -161,8 +161,9 @@ public class App
 
 
 
-    
-        divisibleByThree(2, 10);
+        int first = Integer.valueOf(scanner.nextLine());
+        int second = Integer.valueOf(scanner.nextLine());
+        divisibleByThree(first, second);
 
 
     }
