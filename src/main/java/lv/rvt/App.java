@@ -176,7 +176,7 @@ public class App
     //     }
 
 
-       Stars.printTriangle(4);
+       Stars.christmasTree(10);
 
     }
 }
