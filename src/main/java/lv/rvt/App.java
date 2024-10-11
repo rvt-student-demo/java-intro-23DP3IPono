@@ -161,18 +161,22 @@ public class App
 
 
 
-        int first = Integer.valueOf(scanner.nextLine());
-        int second = Integer.valueOf(scanner.nextLine());
-        divisibleByThree(first, second);
+    //     int first = Integer.valueOf(scanner.nextLine());
+    //     int second = Integer.valueOf(scanner.nextLine());
+    //     divisibleByThree(first, second);
 
 
-    }
+    // }
     
-    public static void divisibleByThree(int first, int second) {
-        for (int i = first; i <= second; i++) {
-            if (i % 3 == 0) {
-                System.out.println(i);
-            }
-        }
+    // public static void divisibleByThree(int first, int second) {
+    //     for (int i = first; i <= second; i++) {
+    //         if (i % 3 == 0) {
+    //             System.out.println(i);
+    //         }
+    //     }
+
+
+       Stars.printTriangle(4);
+
     }
 }
