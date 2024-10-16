@@ -178,17 +178,34 @@ public class App
 
 
     //    Stars.christmasTree(10);
-    ArrayList<String> names = new ArrayList<>();
+    // ArrayList<String> names = new ArrayList<>();
 
-    String name = "";
+    // String name = "";
+    // while (true) {
+    //     name = scanner.nextLine();
+    //     names.add(name);
+    //     if (name == "") {
+    //         break;
+    //     }
+    // }
+    // System.out.println(names.get(2));
+
+
+    ArrayList<Integer> list = new ArrayList<>();
+
+    int num = 0;
+  
+    int sum = 0;
+
     while (true) {
-        name = scanner.nextLine();
-        names.add(name);
-        if (name == "") {
+        num = Integer.valueOf(scanner.nextLine());
+        list.add(num);
+        sum += num;
+        if (num == 0) {
             break;
         }
     }
-    System.out.println(names.get(2));
+    System.out.println(sum);
 
     }
 }
