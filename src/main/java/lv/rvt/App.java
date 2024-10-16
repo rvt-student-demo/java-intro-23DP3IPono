@@ -1,6 +1,7 @@
 package lv.rvt;
 
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class App 
 {
@@ -176,7 +177,18 @@ public class App
     //     }
 
 
-       Stars.christmasTree(10);
+    //    Stars.christmasTree(10);
+    ArrayList<String> names = new ArrayList<>();
+
+    String name = "";
+    while (true) {
+        name = scanner.nextLine();
+        names.add(name);
+        if (name == "") {
+            break;
+        }
+    }
+    System.out.println(names.get(2));
 
     }
 }
