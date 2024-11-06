@@ -7,18 +7,24 @@ public class App
 {
     public static void main( String[] args )
     {
-        Account artosAccount = new Account("Arto's account", 100.00);
+        Account matthewsAccount = new Account("Matthew's account", 1000.00);
+        Account myAccount = new Account("My account", 0.00);
+
+        System.out.println("Initial state");
+        System.out.println(matthewsAccount);
+        System.out.println(myAccount);
     
 
-    System.out.println("Initial state");
-    System.out.println(artosAccount);
-    
+        matthewsAccount.withdraw(100);
+        System.out.println("The balance of Matthew's account is now: " + matthewsAccount.balance());
 
-    artosAccount.deposit(20);
-    System.out.println("The balance of Arto's account is now: " + artosAccount.balance());
+        myAccount.deposit(100);
+        System.out.println("The balance of My account is now: " + myAccount.balance());
+
     
-    System.out.println("End state");
-    System.out.println(artosAccount);
+        System.out.println("End state");
+        System.out.println(matthewsAccount);
+        System.out.println(myAccount);
     
     }
 
