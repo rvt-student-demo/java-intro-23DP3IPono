@@ -7,24 +7,18 @@ public class App
 {
     public static void main( String[] args )
     {
-        Account matthewsAccount = new Account("Matthew's account", 1000.00);
-        Account myAccount = new Account("My account", 0.00);
+        Timer timer = new Timer();
 
-        System.out.println("Initial state");
-        System.out.println(matthewsAccount);
-        System.out.println(myAccount);
-    
+while (true) {
+    System.out.println(timer);
+    timer.advance();
 
-        matthewsAccount.withdraw(100);
-        System.out.println("The balance of Matthew's account is now: " + matthewsAccount.balance());
+    try {
+        Thread.sleep(10);
+    } catch (Exception e) {
 
-        myAccount.deposit(100);
-        System.out.println("The balance of My account is now: " + myAccount.balance());
-
-    
-        System.out.println("End state");
-        System.out.println(matthewsAccount);
-        System.out.println(myAccount);
+    }
+}
     
     }
 
