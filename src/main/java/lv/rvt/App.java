@@ -5,16 +5,25 @@ import java.util.*;
 
 public class App 
 {
-    public static void main( String[] args )
-    {
-        Product tapeMeasure = new Product("Tape measure");
-Product plaster = new Product("Plaster", "home improvement section");
-Product tyre = new Product("Tyre", 5);
+    public static void main(String[] args) {
+        
+        HealthStation childrensHospital = new HealthStation();
 
-System.out.println(tapeMeasure);
-System.out.println(plaster);
-System.out.println(tyre);
-    
+    Person ethan = new Person("Ethan", 1, 110, 7);
+    Person peter = new Person("Peter", 33, 176, 85);
+
+    System.out.println("weighings performed: " + childrensHospital.weighings());
+
+    childrensHospital.weigh(ethan);
+    childrensHospital.weigh(peter);
+
+    System.out.println("weighings performed: " + childrensHospital.weighings());
+
+    childrensHospital.weigh(ethan);
+    childrensHospital.weigh(ethan);
+    childrensHospital.weigh(ethan);
+    childrensHospital.weigh(ethan);
+
+    System.out.println("weighings performed: " + childrensHospital.weighings());
     }
-
 }
