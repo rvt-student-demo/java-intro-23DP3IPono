@@ -5,8 +5,6 @@ public class BoxTester {
         Box box = new Box(2.5, 5.0, 6.0);
         System.out.println("Area: " + box.area() + " Volume: " + box.volume());
 
-        System.out.println("Width: " + box.getWidth());
-        System.out.println("Height: " + box.getHeight());
-        System.out.println("Length: " + box.getLength());
+        System.out.println("topArea: " + box.topArea());
     }
 }

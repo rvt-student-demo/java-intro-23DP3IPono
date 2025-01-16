@@ -17,13 +17,24 @@ public class Box {
         this.length = side;
     }
 
+    public double area() {
+        return 2 * faceArea() + 2 * topArea() + 2 * sideArea();
+    }
+    
     public double volume() {
         return width * height * length;
     }
 
-    public double area() {
-        return 2 * (width * height + height * length + length * width);
+    private double faceArea() {
+        return width * height;
+    }
 
+    private double topArea() {
+        return width * length;
+    }
+ 
+    private double sideArea() {
+        return height * length;
     }
 
     public double getWidth() {
