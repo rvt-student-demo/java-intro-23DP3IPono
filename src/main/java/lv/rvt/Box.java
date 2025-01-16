@@ -17,35 +17,29 @@ public class Box {
         this.length = side;
     }
 
-    public double area() {
-        return 2 * faceArea() + 2 * topArea() + 2 * sideArea();
+    public Box(Box oldBox) {
+        this.width = oldBox.width;
+        this.height = oldBox.height;
+        this.length = oldBox.length;
     }
-    
+
+    public double length() {
+        return this.length;
+    }
+
+    public double height() {
+        return this.height;
+    }
+
+    public double width() {
+        return this.width;
+    }
+
+    public double area() {
+        return 2 * (width * height + height * length + length * width);
+    }
+
     public double volume() {
         return width * height * length;
-    }
-
-    private double faceArea() {
-        return width * height;
-    }
-
-    private double topArea() {
-        return width * length;
-    }
- 
-    private double sideArea() {
-        return height * length;
-    }
-
-    public double getWidth() {
-        return width;
-    }
-
-    public double getHeight() {
-        return height;
-    }
-
-    public double getLength() {
-        return length;
     }
 }
