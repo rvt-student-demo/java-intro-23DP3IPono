@@ -42,12 +42,4 @@ public class Box {
     public double volume() {
         return width * height * length;
     }
-
-    public static Box biggerBox(Box oldBox) {
-        return new Box(1.25 * oldBox.width(), 1.25 * oldBox.height(), 1.25 * oldBox.length());
-    }
-
-    public static Box smallerBox(Box oldBox) {
-        return new Box(0.75 * oldBox.width(), 0.75 * oldBox.height(), 0.75 * oldBox.length());
-    }
 }
